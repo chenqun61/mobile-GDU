@@ -1,0 +1,199 @@
+    .gimbal {
+        width: 100vw;
+        background: #000;
+    }
+
+    figure {
+        position: relative;
+        text-align: center
+    }
+    
+    .gimbal {
+        margin-top: 12vw
+    }
+    
+    .gimbal h1,
+    .gimbal h2,
+    .gimbal h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: normal
+    }
+    
+    .gimbal-one {
+        img {
+            width: 78.28vw;
+            height: 63.12vw;
+            margin-top: 10vw;
+            margin-left: 10vw;
+        }
+        figcaption {
+            padding: 4vw;
+            margin-top: 2vw;
+        }
+    }
+    
+    .gimbal-two {
+        img {
+            width: 71.25vw;
+            height: 72.34vw;
+            margin-top: 8vw
+        }
+        figcaption {
+            padding: 4vw;
+            margin-top: -2vw;
+        }
+    }
+    
+    .gimbal-three {
+        img {
+            width: 66.40vw;
+            height: 62.5vw;
+            margin-top: 10vw
+        }
+        figcaption {
+            padding: 4vw;
+            margin-top: 2vw;
+        }
+    }
+
+    .gimbal-four {
+        img {
+            width: 58.75vw;
+            height: 81.40vw;
+            margin-top: 6vw
+        }
+        figcaption {
+            padding: 4vw;
+            margin-top: -4vw
+        }
+    }
+
+    .gimbal-five {
+        text-align: left;
+        width: 86vw;
+        height: 40vw;
+        margin-top: 32vw;
+        margin-left:7vw; 
+        p {
+            font-size: 4vw;
+        }
+        p:nth-of-type(1) {font-size: 4vw;}
+        p:nth-of-type(2) {
+            margin: 6vw 0;
+            a {
+                color: #e8470c;
+                font-weight: 700;
+                font-size: 3.4vw;
+                display: inline-block;
+            }
+        }
+        p:nth-of-type(3) {font-size: 4vw;color: white;}
+    }
+    
+    .swiper-slide-active h1 {
+        opacity: 0;
+        animation: slideInUp .3s linear .2s;
+        animation-fill-mode: forwards;
+    }
+    
+    .swiper-slide-active h2 {
+        opacity: 0;
+        animation: slideInUp .3s linear .2s;
+        animation-fill-mode: forwards;
+    }
+    
+    .swiper-slide-active h3 {
+        opacity: 0;
+        animation: slideInUp .3s linear .4s;
+        animation-fill-mode: forwards;
+    }
+    
+    .swiper-slide-active p:nth-of-type(1) {
+        opacity: 0;
+        animation: slideInUp .3s linear .6s;
+        animation-fill-mode: forwards;
+    }
+    
+    .swiper-slide-active p:nth-of-type(2){
+        opacity: 0;
+        animation: slideInUp .3s linear .8s;
+        animation-fill-mode: forwards;
+    }
+     .swiper-slide-active p:nth-of-type(3){
+        opacity: 0;
+        animation: slideInUp .3s linear 1s;
+        animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes slideInUp {
+        from {
+            visibility: hidden;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            opacity: 0;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInUp {
+        from {
+            visibility: hidden;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            opacity: 0;
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+    }
+    
+    figcaption h1 {
+        color: #e8470c;
+        font-size: 6.25vw
+    }
+    
+    .gimbal figcaption h2 {
+        color: #e8470c;
+        font-size: 4.37vw;
+        font-weight: bolder
+    }
+    
+    figcaption h3 {
+        color: #fff;
+        font-size: 4.68vw;
+        margin-top: 8.12vw !important
+    }
+    
+    figcaption p:nth-of-type(1) {
+        color: #fff;
+        font-size: 2.5vw;
+        margin-top: 3.28vw
+    }
+    
+    figcaption p:nth-of-type(2) {
+        font-size: 4.37vw;
+        margin-top: 6vw;
+        color: #e8470c
+    }
+    
+    figcaption strong {
+        font-size: 4.37vw;
+        color: #e8470c
+    }
+    
+    figcaption p:nth-of-type(3) {
+        font-size: 3.37vw;
+        color: #bebebe
+    }
+    
+    figure:last-of-type {}
+    
+    .swiper-pagination {
+        position: fixed;
+    }

@@ -1,0 +1,16 @@
+input::-webkit-outer-spin-button,  
+input::-webkit-inner-spin-button{  
+    -webkit-appearance: none !important;  
+    margin: 0;  
+}  
+/* Icon Font */
+@font-face { font-family: 'iconfont'; src: url('iconfont.woff?t=1471419535') format('woff'), url('iconfont.ttf?t=1471419535') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ }
+.iconfont { font-family: 'iconfont' !important; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: .2px; -moz-osx-font-smoothing: grayscale; }
+.icon-daohang600px:before { content: '\e602'; }
+.icon-fenxiang:before { content: '\e67a'; }
+
+/* All Tag */
+* { font-family: 'Microsoft Yahei', 'Arial'; font-size: 10px; font-size: .926vw; margin: 0; padding: 0; letter-spacing: 0; color: #e9e9e9; border: none; }
+body { background: #181818; }
+ul { list-style: none; }
+a { text-decoration: none; }

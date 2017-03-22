@@ -1,0 +1,105 @@
+/* Banner */
+.banner { position: relative;height: 79vh; margin-top: 12vw; padding: 13vw 0; text-align: center;
+    background: -webkit-linear-gradient(#181818, #252525, #181818);
+    background:    -moz-linear-gradient(#181818, #252525, #181818);
+    background:      -o-linear-gradient(#181818, #252525, #181818);
+    background:         linear-gradient(#181818, #252525, #181818);
+}
+.slide-item img:first-of-type { height: 33.15vw; margin-bottom: 12vw; }
+.slide-item img:last-of-type { height: 17.6vw; margin-bottom: 11.574vw;}
+.slide-item h2 { font-size: 9.5rem; margin-bottom: 16vw; }
+.slide-item a { font-size: 5rem; line-height: 10vw; display: block; width: 74%; height: 10vw; margin: auto; text-align: center; background: #ef4e22; }
+/* Tmall */
+.buy { position: relative; height: 20vw; background: #252525; }
+.buy > a { font-size: 5rem; line-height: 10vw; position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: block; width: 74%; height: 10vw; margin: auto; text-align: center; background: #ef4e22; }
+
+/* 四大价值体系 */
+h1 { font-size: 7.2rem; padding-bottom: 2vw; text-align: center; color: #ef4e22;  opacity: 0;}
+p { font-size: 4rem; padding: 0 7%; text-align: center;  opacity: 0;}
+.sale1 { padding-top: 74vw; padding-bottom: 20vw; background: url('./images/sale1.jpg') no-repeat center top; background-size: 100%; }
+.sale2 { padding-top: 80vw; padding-bottom: 20vw; background: url('./images/sale2.png') no-repeat center 10vw; background-size: 75%; }
+.sale3 { padding-top: 95vw; padding-bottom: 20vw; background: url('./images/sale3.png') no-repeat center top; background-size: 100%; }
+.sale4 { padding-top: 60vw; padding-bottom: 20vw; background: url('./images/sale4.png') no-repeat center top; background-size: 62%; }
+
+div.swiper-wrapper > div:nth-child(1) > div img:last-of-type { height: 12.6vw;
+    margin-bottom: 16.574vw; }
+// swiper样式设置
+.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide{
+    height: 79vh;
+}
+
+.swiper-slide-active h2{
+    opacity: 0;
+  animation: slideInUp .3s linear .2s;
+  animation-fill-mode: forwards;
+}
+.swiper-slide-active a {
+    opacity: 0;
+  animation: slideInUp .3s linear .4s;
+  animation-fill-mode: forwards;
+}
+
+.isHeighone{
+     opacity: 0;
+  animation: slideInUp .4s linear .4s;
+  animation-fill-mode: both;
+}
+.isHeightwo{
+     opacity: 0;
+  animation: slideInUp .3s linear .7s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+      visibility:hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  opacity:1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+      visibility:hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    opacity: 0;
+            
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  opacity:1;
+            
+  }
+}
+
+.swiper-slide-active img:last-of-type {
+  animation: zoomIn .5s;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
